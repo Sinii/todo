@@ -134,7 +134,7 @@ public class TodoFragment extends MvpFragment<TodoView, TodoPresenter> implement
 				calendar.set(Calendar.SECOND, 0);
 				calendar.set(Calendar.MILLISECOND, 0);
 				
-				scheduleNotification(mNotificationHelper.createNotification(getResources().getString(R.string.notification_title), todo.getText()), calendar.getTimeInMillis() - System.currentTimeMillis());
+				scheduleNotification(mNotificationHelper.createNotification(getResources().getString(R.string.notification_title), todo.getText()), calendar.getTimeInMillis());
 			}, calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), false);
 		timePickerDialog.show();
 	}
