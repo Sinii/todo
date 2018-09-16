@@ -15,6 +15,7 @@ public interface TodoPresenter extends MvpPresenter<TodoView> {
 
 	void changeTodo(TodoEntity oldTodo, TodoEntity newTodo);
 
-	void addNotificationTodo(TodoEntity todo);
-
+	void changeNotificationTodo(int position);
+	
+	void changeDoneTodo(int pos);
 }

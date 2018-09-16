@@ -1,5 +1,7 @@
 package com.titmouse.anton.todo.database.entity;
 
+import android.text.Editable;
+
 import io.realm.RealmObject;
 
 public class TodoEntity extends RealmObject {
@@ -24,6 +26,13 @@ public class TodoEntity extends RealmObject {
 		this.id = (long) id;
 		this.done = false;
 		this.text = text;
+		this.error = 0;
+	}
+	
+	public TodoEntity(final Long id, final Editable text) {
+		this.id = id;
+		this.done = false;
+		this.text = text.toString();
 		this.error = 0;
 	}
 	

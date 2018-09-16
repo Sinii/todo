@@ -134,6 +134,7 @@
     <orderEntry type="library" name="Gradle: com.hannesdorfmann.mosby3:mvp-common:3.0.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.11.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:runtime-1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: net.vrallev.android:cat-1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: com.hannesdorfmann.mosby3:viewstate-3.0.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:slidingpanelayout-28.0.0-rc02" level="project" />
     <orderEntry type="library" name="Gradle: com.android.databinding:adapters-3.3.0-alpha08" level="project" />
@@ -145,6 +146,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:coordinatorlayout-28.0.0-rc02" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-28.0.0-rc02" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:customview-28.0.0-rc02" level="project" />
+    <orderEntry type="library" name="Gradle: com.evernote:android-job-1.1.8" level="project" />
     <orderEntry type="library" name="Gradle: com.hannesdorfmann.mosby3:mvp-3.0.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:drawerlayout-28.0.0-rc02" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel-1.1.1" level="project" />

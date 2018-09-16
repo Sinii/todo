@@ -57,9 +57,22 @@ public class TodoPresenterImpl extends MvpBasePresenter<TodoView> implements Tod
 	}
 
 	@Override
-	public void addNotificationTodo(final TodoEntity todo) {
+	public void changeNotificationTodo(final int position) {
 		if (isViewAttached()) {
-			mModel.addNotification(todo);
+			mModel.getTodo(position).ifPresent(oldTodo -> {
+				final TodoEntity newTodo = oldTodo;
+				mModel.changeNotification(oldTodo, newTodo);
+			});
+			
+			checkItemsAndShow();
+		}
+	}
+	
+	@Override
+	public void changeDoneTodo(final int pos) {
+		if (isViewAttached()) {
+			mModel.getTodo(pos)
+				.ifPresent(mModel::changeDoneTodo);
 			checkItemsAndShow();
 		}
 	}
