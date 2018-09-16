@@ -1,4 +1,4 @@
-package com.titmouse.anton.todo.history.adapter;
+package com.titmouse.anton.todo.todolist.adapter;
 
 public interface SwipeControllerActions {
 

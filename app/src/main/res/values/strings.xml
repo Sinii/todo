@@ -14,6 +14,9 @@
     <string name="translate_by">&lt;a href="http://translate.yandex.ru/">Переведено сервисом «Яндекс.Переводчик»&lt;/a></string>
     <string name="auto_language"><![CDATA[Авто определение ->]]></string>
     <string name="error_connection">Ошибка, попробуйте позже</string>
+	<string name="dialog_add_todo_title">Что будем делать, сэр?</string>
+    <string name="dialog_add_todo_positive_button">Добавить</string>
+    <string name="dialog_add_todo_negative_button">Отмена</string>
     азербайджанский	az	малаялам	ml
     албанский	sq	мальтийский	mt
     амхарский	am	македонский	mk

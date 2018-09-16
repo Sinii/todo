@@ -5,7 +5,7 @@ import com.titmouse.anton.todo.database.entity.TodoEntity;
 import java.util.List;
 
 
-public interface ToDoRealmDao {
+public interface TodoRealmDao {
 	
 	void setTodo(TodoEntity todoEntity);
 	

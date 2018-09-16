@@ -9,13 +9,13 @@ import java.util.List;
 import io.realm.Realm;
 
 
-public class ToDoRealmDaoImpl implements ToDoRealmDao {
+public class TodoRealmDaoImpl implements TodoRealmDao {
 
     private static class SingletonHolder {
-        static final ToDoRealmDaoImpl HOLDER_INSTANCE = new ToDoRealmDaoImpl();
+        static final TodoRealmDaoImpl HOLDER_INSTANCE = new TodoRealmDaoImpl();
     }
 
-    public static ToDoRealmDaoImpl getInstance() {
+    public static TodoRealmDaoImpl getInstance() {
         return SingletonHolder.HOLDER_INSTANCE;
     }
 

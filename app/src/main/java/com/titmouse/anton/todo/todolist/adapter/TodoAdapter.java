@@ -1,4 +1,4 @@
-package com.titmouse.anton.todo.history.adapter;
+package com.titmouse.anton.todo.todolist.adapter;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -27,7 +27,7 @@ public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.TodoViewHolder
 		mTodoList = todoEntities;
 		notifyDataSetChanged();
 	}
-
+	
 	public TodoEntity getTodo(final int pos) {
 		Log.i("anton", "getTodo: " + pos + " " + mTodoList.get(pos).getId());
 		return mTodoList.get(pos);
@@ -45,7 +45,7 @@ public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.TodoViewHolder
 	@Override
 	public void onBindViewHolder(@NonNull final TodoViewHolder holder, final int position) {
 		assert mTodoList != null;
-
+		
 		Log.i("anton", "onBindViewHolder: " + mTodoList.size() + "  " + position);
 		final TodoEntity todoModel = mTodoList.get(position);
 		if (todoModel != null) {
@@ -63,7 +63,7 @@ public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.TodoViewHolder
 		
 		private final TextView textView;
 		private final CheckBox checkBox;
-
+		
 		private TodoViewHolder(final View v) {
 			super(v);
 			

@@ -1,9 +1,9 @@
-package com.titmouse.anton.todo.history.presenter;
+package com.titmouse.anton.todo.todolist.presenter;
 
 import com.hannesdorfmann.mosby3.mvp.MvpBasePresenter;
 import com.titmouse.anton.todo.database.entity.TodoEntity;
-import com.titmouse.anton.todo.history.model.TodoModelImpl;
-import com.titmouse.anton.todo.history.view.TodoView;
+import com.titmouse.anton.todo.todolist.model.TodoModelImpl;
+import com.titmouse.anton.todo.todolist.view.TodoView;
 
 import java.util.List;
 
@@ -41,7 +41,7 @@ public class TodoPresenterImpl extends MvpBasePresenter<TodoView> implements Tod
 	}
 
 	@Override
-	public void addTodo(TodoEntity todo) {
+	public void addTodo(final TodoEntity todo) {
 		if (isViewAttached()) {
 			mModel.addTodo(todo);
 			checkItemsAndShow();
@@ -49,14 +49,15 @@ public class TodoPresenterImpl extends MvpBasePresenter<TodoView> implements Tod
 	}
 
 	@Override
-	public void changeTodo(TodoEntity todo) {
+	public void changeTodo(final TodoEntity oldTodo, final TodoEntity newTodo) {
 		if (isViewAttached()) {
-			// TODO: 09.09.2018
+			mModel.editTodo(oldTodo, newTodo);
+			checkItemsAndShow();
 		}
 	}
 
 	@Override
-	public void addNotificationTodo(TodoEntity todo) {
+	public void addNotificationTodo(final TodoEntity todo) {
 		if (isViewAttached()) {
 			mModel.addNotification(todo);
 			checkItemsAndShow();

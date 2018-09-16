@@ -1,4 +1,4 @@
-package com.titmouse.anton.todo.history.model;
+package com.titmouse.anton.todo.todolist.model;
 
 import com.titmouse.anton.todo.database.entity.TodoEntity;
 
@@ -25,13 +25,23 @@ public class TodoModelImpl implements TodoModel {
     }
 
     @Override
-    public void addTodo(TodoEntity todoEntity) {
+    public void addTodo(final TodoEntity todoEntity) {
         // TODO: 09.09.2018
         mCachedTodoList.add(mCachedTodoList.size(), todoEntity);
     }
-
+    
     @Override
-    public void addNotification(TodoEntity todoEntity) {
+    public void editTodo(final TodoEntity oldTodo, final TodoEntity newTodo) {
+        final int index = mCachedTodoList.indexOf(oldTodo);
+        if (index >= 0) {
+            mCachedTodoList.set(index, newTodo);
+        } else {
+            // TODO: 16.09.2018 notify server about exception
+        }
+    }
+    
+    @Override
+    public void addNotification(final TodoEntity todoEntity) {
 
     }
 
